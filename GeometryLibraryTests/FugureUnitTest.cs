@@ -21,8 +21,8 @@ namespace GeometryLibraryTests
         [TestMethod]
         public void Triangle_GetArea_ReturnsCorrectArea()
         {
-            for (double firstSide = 0, secondSide = 1, thirdSide = 3;
-                thirdSide < 100; firstSide += 0.1, secondSide += 0.2, thirdSide += 0.3)
+            for (double firstSide = 3, secondSide = 4, thirdSide = 5;
+                thirdSide < 100; firstSide += 0.1, secondSide += 0.1, thirdSide += 0.1)
             {
                 var triangle = new Triangle(firstSide, secondSide, thirdSide);
 
