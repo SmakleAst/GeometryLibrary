@@ -22,7 +22,9 @@ namespace GeometryLibrary.Figures
 
         public bool IsRightTriangle()
         {
-
+            double[] sides = { _firstSide, _secondSide, _thirdSide };
+            Array.Sort(sides);
+            return Math.Pow(sides[2], 2) == Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2);
         }
     }
 }
