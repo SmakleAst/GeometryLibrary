@@ -11,7 +11,7 @@ namespace GeometryLibrary.Figures
         
         public override double GetArea()
         {
-            return Math.PI * _radius;
+            return Math.PI * Math.Pow(_radius, 2);
         }
     }
 }
